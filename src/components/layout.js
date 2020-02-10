@@ -63,8 +63,7 @@ class Layout extends React.Component {
         <header>{header}</header>
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()} Code4Thouhgt，
-          使用 <a href="https://www.gatsbyjs.org">Gatsby</a> 构建
+          © {new Date().getFullYear()} Code4Thouhgt， 粤ICP备16090232号-1
         </footer>
       </div>
     )

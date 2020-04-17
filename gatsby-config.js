@@ -1,7 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Code4Thought Blog`,
-    author: `Code4Thought`,
+    author: {
+      name: `Code4Thought`,
+      summary: `a technical blog`
+    },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://code4thought.com/`
   },
@@ -63,7 +66,6 @@ module.exports = {
         icon: `content/assets/code4thought-logo.png`,
       },
     },
-    `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-typography`,
@@ -71,5 +73,8 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline
+    // `gatsby-plugin-offline`,
   ],
 }

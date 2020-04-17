@@ -23,7 +23,10 @@ const Bio = () => {
       }
       site {
         siteMetadata {
-          author
+          author {
+            name
+            summary
+          }
         }
       }
     }
@@ -39,7 +42,7 @@ const Bio = () => {
     >
       <Image
         fixed={data.avatar.childImageSharp.fixed}
-        alt={author}
+        alt={author.name}
         style={{
           marginRight: rhythm(1 / 2),
           marginBottom: 0,
@@ -51,7 +54,8 @@ const Bio = () => {
         }}
       />
       <p>
-        来自 <strong>{author}</strong>， 写点儿有用的。如有问题，请提交 <a href="https://github.com/code4thought/code4thought-blog/issues">issues</a>
+        来自 <strong>{author.name}</strong>， {author.summary}, 写点儿有用的。
+        如有问题，请提交 <a href="https://github.com/code4thought/code4thought-blog/issues">issues</a>
       </p>
     </div>
   )

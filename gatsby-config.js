@@ -5,6 +5,9 @@ module.exports = {
       name: `Code4Thought`,
       summary: `a technical blog`
     },
+    social: {
+      twitter: ``
+    },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://code4thought.com/`
   },
